@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body {
+            background-color: rgb(73, 73, 73);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title>first javascript scirpt</title>
+</head>
+<body>
+    <h1>Welcome the my first javascript little programe</h1>
+    <h2>this is a very simple little script that i made while trying to lear javasciprt of the first time</h2>
+
+    <script>
+        alert("hello and welcome to my first js script");
+        name = prompt("can you give me your name :");
+        alert("glad to meet you " + name);
+        choice = prompt("what do you want to do next : \n  1. add to numbers together\n  2. multiply 2 numbers together \n  3. calculate the factorial of a number");
+
+        choice = choice * 1;
+        switch (choice) {
+            case 1:
+                a = prompt("give the number a :");
+                b = prompt("give the number b :");
+                a = 1*a;
+                b= 1*b
+                result = a+b;
+                break;
+            case 2:
+                a = prompt("give the number a :");
+                b = prompt("give the number b :");
+                result = a*b;
+                break;
+            case 3:
+                result = 1;
+                i = 0;
+                a = prompt("what number do you want to factorise :");
+                for (let i = 1; i <= a; i++) {
+                    result = result * i;
+                }
+                break;
+        }
+        alert("the result is " + result);
+        alert("thank you " + name + " for looking at my first javascript script");
+    </script>
+
+</body>
